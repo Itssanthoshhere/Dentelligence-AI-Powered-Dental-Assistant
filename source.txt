@@ -1,3 +1,116 @@
-npx create-next-app@latest ./
+# Dentelligence — Initial Project Setup
 
-n
+## Create Next.js App
+
+```bash
+npx create-next-app@latest ./
+```
+
+---
+
+## Initialize shadcn/ui
+
+```bash
+npx shadcn@latest init
+```
+
+### Recommended Configuration
+
+```text
+Component Library: Radix
+Preset: Nova (Lucide / Geist)
+Style: New York
+Base Color: Zinc
+CSS Variables: Yes
+```
+
+---
+
+## Add shadcn Components
+
+```bash
+npx shadcn@latest add
+```
+
+### Common Components
+
+```bash
+npx shadcn@latest add button
+npx shadcn@latest add card
+npx shadcn@latest add input
+npx shadcn@latest add textarea
+npx shadcn@latest add label
+npx shadcn@latest add form
+npx shadcn@latest add dialog
+npx shadcn@latest add dropdown-menu
+npx shadcn@latest add sheet
+npx shadcn@latest add calendar
+npx shadcn@latest add tabs
+npx shadcn@latest add avatar
+npx shadcn@latest add badge
+npx shadcn@latest add table
+```
+
+---
+
+## Install Caffeine Theme
+
+```bash
+npx shadcn@latest add https://tweakcn.com/r/themes/caffeine.json
+```
+
+This updates:
+
+```text
+src/app/globals.css
+```
+
+and applies the Caffeine color palette.
+
+---
+
+## Start Development Server
+
+```bash
+npm run dev
+```
+
+Open:
+
+```text
+http://localhost:3000
+```
+
+---
+
+
+
+## Current Tech Stack
+
+* Next.js 16
+* React 19
+* TypeScript
+* Tailwind CSS v4
+* shadcn/ui
+* Radix UI
+* Nova Preset
+* Caffeine themes
+
+---
+
+## Planned Features
+
+* Modern Dental Landing Page
+* Authentication (Google, GitHub, Email)
+* Email Verification
+* Dentist Management
+* Appointment Booking
+* AI Dental Assistant
+* Email Notifications
+* Admin Dashboard
+* Patient Dashboard
+* Booking Analytics
+* Responsive Mobile Design
+* Dark Mode Support
+* PostgreSQL Database
+* AI Chat Integration (Future)
