@@ -83,7 +83,12 @@ http://localhost:3000
 
 ---
 
+Install Authentication (Clerk)
+npm install @clerk/nextjs
 
+Setup Clerk middleware and environment variables.
+
+---
 
 ## Current Tech Stack
 
@@ -114,3 +119,6 @@ http://localhost:3000
 * Dark Mode Support
 * PostgreSQL Database
 * AI Chat Integration (Future)
+
+
+npm install @clerk/nextjs
