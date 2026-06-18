@@ -96,6 +96,15 @@ export default function RootLayout({
                 }
                 return origFetch.apply(this, args);
               };
+
+              // 4. Register Service Worker alongside inline patching
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                  navigator.serviceWorker.register('/sw.js').catch(function(err) {
+                    console.error('ServiceWorker registration failed: ', err);
+                  });
+                });
+              }
             })();
           ` }} />
         </head>
