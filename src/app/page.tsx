@@ -1,18 +1,21 @@
-import { SignInButton, SignOutButton, UserButton } from "@clerk/nextjs";
+import CTA from "@/components/LandingPage/CTA";
+import Footer from "@/components/LandingPage/Footer";
+import Header from "@/components/LandingPage/Header";
+import Hero from "@/components/LandingPage/Hero";
+import HowItWorks from "@/components/LandingPage/HowItWorks";
+import PricingSection from "@/components/LandingPage/PricingSection";
+import WhatToAsk from "@/components/LandingPage/WhatToAsk";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <SignOutButton>
-        <SignInButton />
-      </SignOutButton>
-
-      <SignInButton>
-        <div className="flex flex-col gap-4 items-center">
-          <UserButton />
-          <SignOutButton />
-        </div>
-      </SignInButton>
-    </main>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <Hero />
+      <HowItWorks />
+      <WhatToAsk />
+      <PricingSection />
+      <CTA />
+      <Footer />
+    </div>
   );
 }

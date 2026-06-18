@@ -56,7 +56,7 @@ npx shadcn@latest add table
 ## Install Caffeine Theme
 
 ```bash
-npx shadcn@latest add https://tweakcn.com/r/themes/caffeine.json
+npx shadcn@latest add https://tweakcn.com/r/themes/cmqju1vpt000104kz8qvterg4
 ```
 
 This updates:
