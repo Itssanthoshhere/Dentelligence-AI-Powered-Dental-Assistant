@@ -75,18 +75,63 @@ and applies the Caffeine color palette.
 npm run dev
 ```
 
-Open:
+---
 
-```text
-http://localhost:3000
+## Authentication (Clerk)
+
+```bash
+npm install @clerk/nextjs
 ```
+
+### Setup
+
+* Create Clerk account
+* Create application
+* Add environment variables
+* Configure middleware/proxy
+* Wrap app with ClerkProvider
 
 ---
 
-Install Authentication (Clerk)
-npm install @clerk/nextjs
+## Database Setup (Prisma + PostgreSQL)
 
-Setup Clerk middleware and environment variables.
+### Install Prisma
+
+```bash
+npm install prisma --save-dev
+npm install @prisma/client
+```
+
+### Initialize Prisma
+
+```bash
+npx prisma init
+```
+
+This creates:
+
+```text
+prisma/schema.prisma
+.env
+```
+
+### Configure Database URL
+
+```env
+DATABASE_URL="postgresql://username:password@localhost:5432/dentelligence"
+```
+
+### Push Schema
+
+```bash
+npx prisma db push
+```
+
+### Generate Prisma Client
+
+```bash
+npx prisma generate
+```
 
 ---
 
@@ -99,26 +144,7 @@ Setup Clerk middleware and environment variables.
 * shadcn/ui
 * Radix UI
 * Nova Preset
-* Caffeine themes
-
----
-
-## Planned Features
-
-* Modern Dental Landing Page
-* Authentication (Google, GitHub, Email)
-* Email Verification
-* Dentist Management
-* Appointment Booking
-* AI Dental Assistant
-* Email Notifications
-* Admin Dashboard
-* Patient Dashboard
-* Booking Analytics
-* Responsive Mobile Design
-* Dark Mode Support
-* PostgreSQL Database
-* AI Chat Integration (Future)
-
-
-npm install @clerk/nextjs
+* Caffeine Theme
+* Clerk Authentication
+* Prisma ORM
+* PostgreSQL
